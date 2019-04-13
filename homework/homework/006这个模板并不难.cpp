@@ -28,17 +28,17 @@ public:
 	}
 };
 int a[100];
-int main() {
-	char line[100];
-	while (cin >> line) {
-		myclass<char> obj(line, strlen(line));;
-		obj.Show();
-		int n;
-		cin >> n;
-		for (int i = 0; i < n; ++i)
-			cin >> a[i];
-		myclass<int> obj2(a, n);
-		obj2.Show();
-	}
-	return 0;
-}
+//int main() {
+//	char line[100];
+//	while (cin >> line) {
+//		myclass<char> obj(line, strlen(line));;
+//		obj.Show();
+//		int n;
+//		cin >> n;
+//		for (int i = 0; i < n; ++i)
+//			cin >> a[i];
+//		myclass<int> obj2(a, n);
+//		obj2.Show();
+//	}
+//	return 0;
+//}
