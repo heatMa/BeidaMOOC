@@ -5,6 +5,17 @@ using namespace std;
 template <class T>
 class myclass {
 	// 在此处补充你的代码
+public:
+	int size;
+	T* p = nullptr;
+
+	myclass(T* data, int len):size(len)
+	{
+		p = new T[len];
+		//这里一开始写的len,应该是len*sizeof(T),第三个参数是字节的长度，不是数组的长度
+		memcpy(p, data, len*sizeof(T));
+
+	}
 	~myclass() {
 		delete[] p;
 	}
